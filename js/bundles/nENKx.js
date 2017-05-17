@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([0],[
+webpackJsonppageComponent([35],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -11925,7 +11925,323 @@ module.exports = Uri;
 /* 106 */,
 /* 107 */,
 /* 108 */,
-/* 109 */,
+/* 109 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.templates = exports.nENKx = undefined;
+
+var _metalComponent = __webpack_require__(0);
+
+var _metalComponent2 = _interopRequireDefault(_metalComponent);
+
+var _metalSoy = __webpack_require__(1);
+
+var _metalSoy2 = _interopRequireDefault(_metalSoy);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* jshint ignore:start */
+
+
+var templates;
+goog.loadModule(function (exports) {
+
+  // This file was automatically generated from where_does_css_come_from.soy.
+  // Please don't edit this file by hand.
+
+  /**
+   * @fileoverview Templates in namespace nENKx.
+   * @public
+   */
+
+  goog.module('nENKx.incrementaldom');
+
+  /** @suppress {extraRequire} */
+  var soy = goog.require('soy');
+  /** @suppress {extraRequire} */
+  var soydata = goog.require('soydata');
+  /** @suppress {extraRequire} */
+  goog.require('goog.i18n.bidi');
+  /** @suppress {extraRequire} */
+  goog.require('goog.asserts');
+  /** @suppress {extraRequire} */
+  goog.require('goog.string');
+  var IncrementalDom = goog.require('incrementaldom');
+  var ie_open = IncrementalDom.elementOpen;
+  var ie_close = IncrementalDom.elementClose;
+  var ie_void = IncrementalDom.elementVoid;
+  var ie_open_start = IncrementalDom.elementOpenStart;
+  var ie_open_end = IncrementalDom.elementOpenEnd;
+  var itext = IncrementalDom.text;
+  var iattr = IncrementalDom.attr;
+
+  var $templateAlias1 = _metalSoy2.default.getTemplate('talk.incrementaldom', 'render');
+
+  /**
+   * @param {Object<string, *>=} opt_data
+   * @param {(null|undefined)=} opt_ignored
+   * @param {Object<string, *>=} opt_ijData
+   * @return {void}
+   * @suppress {checkTypes}
+   */
+  function $render(opt_data, opt_ignored, opt_ijData) {
+    var param304 = function param304() {
+      ie_open('article', null, null, 'id', '1');
+      ie_open('h5');
+      itext('Notes');
+      ie_close('h5');
+      ie_open('ul');
+      ie_open('li');
+      itext('It comes from 1996 (IE3)');
+      ie_close('li');
+      ie_open('li');
+      itext('Don\'t break the web! Everything still works. All is backwards compatible');
+      ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+      itext('Where does it come from ');
+      ie_open('strong');
+      itext('today');
+      ie_close('strong');
+      ie_close('p');
+      ie_open('p');
+      ie_open('strong');
+      itext('CSS WG');
+      ie_close('strong');
+      ie_close('p');
+      ie_open('ul');
+      ie_open('li');
+      itext('Browser vendor members');
+      ie_close('li');
+      ie_open('li');
+      itext('Ebook/Epubs members');
+      ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+      ie_open('strong');
+      itext('Specs originate from');
+      ie_close('strong');
+      ie_close('p');
+      ie_open('ul');
+      ie_open('li');
+      itext('Browser vendors');
+      ie_close('li');
+      ie_open('li');
+      itext('CSS user agents');
+      ie_close('li');
+      ie_open('li');
+      itext('Companies (adobe)');
+      ie_close('li');
+      ie_open('li');
+      itext('CSS WG itself');
+      ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+      ie_open('strong');
+      itext('CSS Grid Spec');
+      ie_close('strong');
+      ie_close('p');
+      ie_open('ul');
+      ie_open('li');
+      itext('First public working draft in 2011');
+      ie_open('ul');
+      ie_open('li');
+      itext('A snapshot of the state of a specification at a particular date');
+      ie_close('li');
+      ie_open('li');
+      itext('The editor\'s draft is the current document');
+      ie_close('li');
+      ie_close('ul');
+      ie_close('li');
+      ie_open('li');
+      itext('It goes back to the CSS Advanced Layout Module spec (2005)');
+      ie_close('li');
+      ie_open('li');
+      itext('Experimental implementations (vendor prefixes or flags)');
+      ie_open('ul');
+      ie_open('li');
+      itext('IE10 implemented it as experimental prefixed feature');
+      ie_close('li');
+      ie_open('li');
+      itext('Bloomberg sponsored the implementation in Blink and Webkit');
+      ie_close('li');
+      ie_open('li');
+      itext('With prefixes, features are available, making the spec changes way harder');
+      ie_close('li');
+      ie_close('ul');
+      ie_close('li');
+      ie_open('li');
+      itext('By using experimental impls, community can ');
+      ie_open('strong');
+      itext('influence specs');
+      ie_close('strong');
+      itext(' -> gutter');
+      ie_close('li');
+      ie_open('li');
+      itext('Browsers implement alongside spec development');
+      ie_close('li');
+      ie_open('li');
+      itext('CSS Grid Candidate Recommendation (2016)');
+      ie_open('ul');
+      ie_open('li');
+      itext('It is ready to gather implementation experience');
+      ie_close('li');
+      ie_close('ul');
+      ie_close('li');
+      ie_open('li');
+      itext('Proposes recommendation');
+      ie_open('ul');
+      ie_open('li');
+      itext('Requires 2 different interoperable implementations of each feature');
+      ie_close('li');
+      ie_close('ul');
+      ie_close('li');
+      ie_open('li');
+      itext('There are ');
+      ie_open('em');
+      itext('at-risk');
+      ie_close('em');
+      itext(' implementations that might not be implemented by 2 diff implementors');
+      ie_close('li');
+      ie_open('li');
+      itext('As of March 2017 Grid is in all Browsers!');
+      ie_close('li');
+      ie_open('li');
+      itext('Why it takes so long?');
+      ie_open('ul');
+      ie_open('li');
+      itext('Needs to be implemented');
+      ie_close('li');
+      ie_open('li');
+      itext('Priorities');
+      ie_close('li');
+      ie_open('li');
+      itext('Does it make sense?');
+      ie_close('li');
+      ie_open('li');
+      itext('Will it break anything?');
+      ie_close('li');
+      ie_close('ul');
+      ie_close('li');
+      ie_open('li');
+      itext('Why are some things weird?');
+      ie_close('li');
+      ie_close('ul');
+      ie_close('article');
+      ie_open('article', null, null, 'id', '2');
+      ie_open('h5');
+      itext('Opinion');
+      ie_close('h5');
+      ie_open('p');
+      itext('Nice overview into the CSS WG and how CSS specs happen, evolve and can be influenced.');
+      ie_close('p');
+      ie_close('article');
+      ie_open('article', null, null, 'id', '3');
+      ie_open('h5');
+      itext('Related Links');
+      ie_close('h5');
+      ie_open('table');
+      ie_open('thead');
+      ie_open('tr');
+      ie_open('th');
+      itext('Related Links');
+      ie_close('th');
+      ie_open('th');
+      itext('Rating');
+      ie_close('th');
+      ie_close('tr');
+      ie_close('thead');
+      ie_open('tbody');
+      ie_open('tr');
+      ie_open('td');
+      ie_open('a', null, null, 'href', 'https://github.com/w3c/csswg-drafts');
+      itext('CSS WG Editor Drafts');
+      ie_close('a');
+      ie_close('td');
+      ie_open('td');
+      itext('\u2605\u2605\u2605\u2606\u2606');
+      ie_close('td');
+      ie_close('tr');
+      ie_open('tr');
+      ie_open('td');
+      ie_open('a', null, null, 'href', 'https://twitter.com/csswg');
+      itext('@csswg');
+      ie_close('a');
+      ie_close('td');
+      ie_open('td');
+      itext('\u2605\u2605\u2605\u2606\u2606');
+      ie_close('td');
+      ie_close('tr');
+      ie_open('tr');
+      ie_open('td');
+      ie_open('a', null, null, 'href', 'https://www.w3.org/Style/CSS/current-work.en.html');
+      itext('CSS Current Work & how to participate');
+      ie_close('a');
+      ie_close('td');
+      ie_open('td');
+      itext('\u2605\u2605\u2605\u2606\u2606');
+      ie_close('td');
+      ie_close('tr');
+      ie_open('tr');
+      ie_open('td');
+      ie_open('a', null, null, 'href', 'http://www.webstandards.org/action/bug/');
+      itext('Report Browser Bugs');
+      ie_close('a');
+      ie_close('td');
+      ie_open('td');
+      itext('\u2605\u2605\u2605\u2606\u2606');
+      ie_close('td');
+      ie_close('tr');
+      ie_close('tbody');
+      ie_close('table');
+      ie_close('article');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+      ie_close('input');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+      ie_close('input');
+    };
+    $templateAlias1(soy.$$assignDefaults({ content: param304 }, opt_data), null, opt_ijData);
+  }
+  exports.render = $render;
+  if (goog.DEBUG) {
+    $render.soyTemplateName = 'nENKx.render';
+  }
+
+  exports.render.params = ["page", "site"];
+  exports.render.types = { "page": "any", "site": "any" };
+  exports.templates = templates = exports;
+  return exports;
+});
+
+var nENKx = function (_Component) {
+  _inherits(nENKx, _Component);
+
+  function nENKx() {
+    _classCallCheck(this, nENKx);
+
+    return _possibleConstructorReturn(this, (nENKx.__proto__ || Object.getPrototypeOf(nENKx)).apply(this, arguments));
+  }
+
+  return nENKx;
+}(_metalComponent2.default);
+
+_metalSoy2.default.register(nENKx, templates);
+exports.nENKx = nENKx;
+exports.templates = templates;
+exports.default = templates;
+/* jshint ignore:end */
+
+/***/ }),
 /* 110 */,
 /* 111 */,
 /* 112 */,
@@ -11960,359 +12276,7 @@ module.exports = Uri;
 /* 141 */,
 /* 142 */,
 /* 143 */,
-/* 144 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.templates = exports.pageIndex = undefined;
-
-var _metalComponent = __webpack_require__(0);
-
-var _metalComponent2 = _interopRequireDefault(_metalComponent);
-
-var _metalSoy = __webpack_require__(1);
-
-var _metalSoy2 = _interopRequireDefault(_metalSoy);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* jshint ignore:start */
-
-
-var templates;
-goog.loadModule(function (exports) {
-
-  // This file was automatically generated from index.soy.
-  // Please don't edit this file by hand.
-
-  /**
-   * @fileoverview Templates in namespace pageIndex.
-   * @public
-   */
-
-  goog.module('pageIndex.incrementaldom');
-
-  /** @suppress {extraRequire} */
-  var soy = goog.require('soy');
-  /** @suppress {extraRequire} */
-  var soydata = goog.require('soydata');
-  /** @suppress {extraRequire} */
-  goog.require('goog.i18n.bidi');
-  /** @suppress {extraRequire} */
-  goog.require('goog.asserts');
-  /** @suppress {extraRequire} */
-  goog.require('goog.string');
-  var IncrementalDom = goog.require('incrementaldom');
-  var ie_open = IncrementalDom.elementOpen;
-  var ie_close = IncrementalDom.elementClose;
-  var ie_void = IncrementalDom.elementVoid;
-  var ie_open_start = IncrementalDom.elementOpenStart;
-  var ie_open_end = IncrementalDom.elementOpenEnd;
-  var itext = IncrementalDom.text;
-  var iattr = IncrementalDom.attr;
-
-  var $templateAlias1 = _metalSoy2.default.getTemplate('main.incrementaldom', 'render');
-
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $render(opt_data, opt_ignored, opt_ijData) {
-    var param76 = function param76() {
-      $header(opt_data, null, opt_ijData);
-      $footer(null, null, opt_ijData);
-    };
-    $templateAlias1(soy.$$assignDefaults({ content: param76 }, opt_data), null, opt_ijData);
-  }
-  exports.render = $render;
-  if (goog.DEBUG) {
-    $render.soyTemplateName = 'pageIndex.render';
-  }
-
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $header(opt_data, opt_ignored, opt_ijData) {
-    ie_open('header', null, null, 'class', 'header');
-    ie_open('div', null, null, 'class', 'container');
-    ie_open('h1', null, null, 'class', 'header-title');
-    var dyn8 = opt_data.site.title;
-    if (typeof dyn8 == 'function') dyn8();else if (dyn8 != null) itext(dyn8);
-    ie_close('h1');
-    ie_open('h2', null, null, 'class', 'header-subtitle');
-    var dyn9 = opt_data.site.index.description;
-    if (typeof dyn9 == 'function') dyn9();else if (dyn9 != null) itext(dyn9);
-    ie_close('h2');
-    ie_open('div', null, null, 'class', 'header-cta');
-    ie_open('a', null, null, 'href', '#', 'class', 'btn btn-accent');
-    itext('Go to Conferences Now');
-    ie_close('a');
-    ie_open('a', null, null, 'href', '#', 'class', 'btn btn-default');
-    itext('---');
-    ie_close('a');
-    ie_close('div');
-    ie_close('div');
-    ie_close('header');
-  }
-  exports.header = $header;
-  if (goog.DEBUG) {
-    $header.soyTemplateName = 'pageIndex.header';
-  }
-
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $why(opt_data, opt_ignored, opt_ijData) {
-    ie_open('article', null, null, 'class', 'about');
-    ie_open('div', null, null, 'class', 'container');
-    ie_open('div', null, null, 'class', 'row');
-    ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
-    ie_open('h3', null, null, 'class', 'about-title');
-    itext('Start with why');
-    ie_close('h3');
-    ie_open('p', null, null, 'class', 'about-description');
-    itext('Through the WHY, a story will arise, which will create trust and make an idea, a service, or a project unique. As Simon Sinek has said, having loyal users is all about attracting the people who share your fundamental beliefs. Remember: People don\'t buy what you do. They buy why you do it. I\'ll say it again: People don\'t buy what you do. They buy why you do it.');
-    ie_close('p');
-    ie_close('div');
-    ie_close('div');
-    ie_close('div');
-    ie_close('article');
-  }
-  exports.why = $why;
-  if (goog.DEBUG) {
-    $why.soyTemplateName = 'pageIndex.why';
-  }
-
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $features(opt_data, opt_ignored, opt_ijData) {
-    ie_open('div', null, null, 'class', 'features');
-    ie_open('div', null, null, 'class', 'container');
-    ie_open('div', null, null, 'class', 'row');
-    ie_open('section', null, null, 'class', 'feature col-md-4 col-md-offset-2');
-    ie_open('div', null, null, 'class', 'feature-graphic');
-    ie_void('span', null, null, 'class', 'icon-16-bullhorn');
-    ie_close('div');
-    ie_open('h3', null, null, 'class', 'feature-title');
-    itext('Heading');
-    ie_close('h3');
-    ie_open('p', null, null, 'class', 'feature-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo.');
-    ie_close('p');
-    ie_close('section');
-    ie_open('section', null, null, 'class', 'feature col-md-4');
-    ie_open('div', null, null, 'class', 'feature-graphic');
-    ie_void('span', null, null, 'class', 'icon-16-lock');
-    ie_close('div');
-    ie_open('h3', null, null, 'class', 'feature-title');
-    itext('Heading');
-    ie_close('h3');
-    ie_open('p', null, null, 'class', 'feature-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo.');
-    ie_close('p');
-    ie_close('section');
-    ie_open('section', null, null, 'class', 'feature col-md-4');
-    ie_open('div', null, null, 'class', 'feature-graphic');
-    ie_void('span', null, null, 'class', 'icon-16-calendar');
-    ie_close('div');
-    ie_open('h3', null, null, 'class', 'feature-title');
-    itext('Heading');
-    ie_close('h3');
-    ie_open('p', null, null, 'class', 'feature-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo.');
-    ie_close('p');
-    ie_close('section');
-    ie_close('div');
-    ie_close('div');
-    ie_close('div');
-  }
-  exports.features = $features;
-  if (goog.DEBUG) {
-    $features.soyTemplateName = 'pageIndex.features';
-  }
-
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $how(opt_data, opt_ignored, opt_ijData) {
-    ie_open('article', null, null, 'class', 'about');
-    ie_open('div', null, null, 'class', 'container');
-    ie_open('div', null, null, 'class', 'row');
-    ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
-    ie_open('h3', null, null, 'class', 'about-title');
-    itext('It\'s easier than you think');
-    ie_close('h3');
-    ie_open('p', null, null, 'class', 'about-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.');
-    ie_close('p');
-    ie_close('div');
-    ie_close('div');
-    ie_close('div');
-    ie_close('article');
-  }
-  exports.how = $how;
-  if (goog.DEBUG) {
-    $how.soyTemplateName = 'pageIndex.how';
-  }
-
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $highlights(opt_data, opt_ignored, opt_ijData) {
-    ie_open('div', null, null, 'class', 'highlights');
-    ie_open('div', null, null, 'class', 'container');
-    ie_open('section', null, null, 'class', 'highlight row');
-    ie_open('div', null, null, 'class', 'col-md-6 col-md-offset-2');
-    ie_open('h4', null, null, 'class', 'highlight-title');
-    itext('First highlight. It\'ll blow your mind.');
-    ie_close('h4');
-    ie_open('p', null, null, 'class', 'highlight-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.');
-    ie_close('p');
-    ie_close('div');
-    ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-1');
-    ie_open('img', null, null, 'class', 'highlight-image', 'src', 'http://placehold.it/500x400/e7e8e8/64696d', 'alt', 'Placeholder');
-    ie_close('img');
-    ie_close('div');
-    ie_close('section');
-    ie_open('section', null, null, 'class', 'highlight row');
-    ie_open('div', null, null, 'class', 'col-md-6 col-md-push-9');
-    ie_open('h4', null, null, 'class', 'highlight-title');
-    itext('It\'s that good. See for yourself.');
-    ie_close('h4');
-    ie_open('p', null, null, 'class', 'highlight-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.');
-    ie_close('p');
-    ie_close('div');
-    ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-2 col-md-pull-6');
-    ie_open('img', null, null, 'class', 'highlight-image', 'src', 'http://placehold.it/500x400/e7e8e8/64696d', 'alt', 'Placeholder');
-    ie_close('img');
-    ie_close('div');
-    ie_close('section');
-    ie_open('section', null, null, 'class', 'highlight row');
-    ie_open('div', null, null, 'class', 'col-md-6 col-md-offset-2');
-    ie_open('h4', null, null, 'class', 'highlight-title');
-    itext('And lastly, this one. Checkmate.');
-    ie_close('h4');
-    ie_open('p', null, null, 'class', 'highlight-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.');
-    ie_close('p');
-    ie_close('div');
-    ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-1');
-    ie_open('img', null, null, 'class', 'highlight-image', 'src', 'http://placehold.it/500x400/e7e8e8/64696d', 'alt', 'Placeholder');
-    ie_close('img');
-    ie_close('div');
-    ie_close('section');
-    ie_close('div');
-    ie_close('div');
-  }
-  exports.highlights = $highlights;
-  if (goog.DEBUG) {
-    $highlights.soyTemplateName = 'pageIndex.highlights';
-  }
-
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $footer(opt_data, opt_ignored, opt_ijData) {
-    ie_open('footer', null, null, 'class', 'footer');
-    ie_open('div', null, null, 'class', 'container');
-    ie_open('div', null, null, 'class', 'row');
-    ie_open('p', null, null, 'class', 'footer-description col-md-6 col-md-offset-2');
-    itext('Copyright \xA9 2017 ');
-    ie_open('a', null, null, 'href', 'https://liferay.com');
-    itext('Liferay, Inc');
-    ie_close('a');
-    ie_close('p');
-    ie_open('p', null, null, 'class', 'footer-description col-md-6');
-    itext('Powered by ');
-    ie_open('a', null, null, 'href', 'http://wedeploy.com');
-    itext('WeDeploy\u2122');
-    ie_close('a');
-    ie_close('p');
-    ie_close('div');
-    ie_close('div');
-    ie_close('footer');
-  }
-  exports.footer = $footer;
-  if (goog.DEBUG) {
-    $footer.soyTemplateName = 'pageIndex.footer';
-  }
-
-  exports.render.params = ["site"];
-  exports.render.types = { "site": "any" };
-  exports.header.params = ["site"];
-  exports.header.types = { "site": "any" };
-  exports.why.params = [];
-  exports.why.types = {};
-  exports.features.params = [];
-  exports.features.types = {};
-  exports.how.params = [];
-  exports.how.types = {};
-  exports.highlights.params = [];
-  exports.highlights.types = {};
-  exports.footer.params = [];
-  exports.footer.types = {};
-  exports.templates = templates = exports;
-  return exports;
-});
-
-var pageIndex = function (_Component) {
-  _inherits(pageIndex, _Component);
-
-  function pageIndex() {
-    _classCallCheck(this, pageIndex);
-
-    return _possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
-  }
-
-  return pageIndex;
-}(_metalComponent2.default);
-
-_metalSoy2.default.register(pageIndex, templates);
-exports.pageIndex = pageIndex;
-exports.templates = templates;
-exports.default = templates;
-/* jshint ignore:end */
-
-/***/ }),
+/* 144 */,
 /* 145 */,
 /* 146 */,
 /* 147 */,
@@ -12322,45 +12286,7 @@ exports.default = templates;
 /* 151 */,
 /* 152 */,
 /* 153 */,
-/* 154 */,
-/* 155 */,
-/* 156 */,
-/* 157 */,
-/* 158 */,
-/* 159 */,
-/* 160 */,
-/* 161 */,
-/* 162 */,
-/* 163 */,
-/* 164 */,
-/* 165 */,
-/* 166 */,
-/* 167 */,
-/* 168 */,
-/* 169 */,
-/* 170 */,
-/* 171 */,
-/* 172 */,
-/* 173 */,
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */,
-/* 178 */,
-/* 179 */,
-/* 180 */,
-/* 181 */,
-/* 182 */,
-/* 183 */,
-/* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */,
-/* 189 */,
-/* 190 */,
-/* 191 */,
-/* 192 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12392,9 +12318,9 @@ __webpack_require__(18);
 
 __webpack_require__(19);
 
-var _indexSoy = __webpack_require__(144);
+var _where_does_css_come_fromSoy = __webpack_require__(109);
 
-var _indexSoy2 = _interopRequireDefault(_indexSoy);
+var _where_does_css_come_fromSoy2 = _interopRequireDefault(_where_does_css_come_fromSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12404,23 +12330,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageIndex = function (_Component) {
-  _inherits(pageIndex, _Component);
+var nENKx = function (_Component) {
+  _inherits(nENKx, _Component);
 
-  function pageIndex() {
-    _classCallCheck(this, pageIndex);
+  function nENKx() {
+    _classCallCheck(this, nENKx);
 
-    return _possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (nENKx.__proto__ || Object.getPrototypeOf(nENKx)).apply(this, arguments));
   }
 
-  return pageIndex;
+  return nENKx;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pageIndex, _indexSoy2.default);
+_metalSoy2.default.register(nENKx, _where_does_css_come_fromSoy2.default);
 
-exports.default = pageIndex;
+exports.default = nENKx;
 
 /***/ })
-],[192]);
+],[154]);

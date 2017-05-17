@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([0],[
+webpackJsonppageComponent([3],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -11957,10 +11957,7 @@ module.exports = Uri;
 /* 138 */,
 /* 139 */,
 /* 140 */,
-/* 141 */,
-/* 142 */,
-/* 143 */,
-/* 144 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11969,7 +11966,7 @@ module.exports = Uri;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.pageIndex = undefined;
+exports.templates = exports.vHchB = undefined;
 
 var _metalComponent = __webpack_require__(0);
 
@@ -11995,11 +11992,11 @@ goog.loadModule(function (exports) {
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace pageIndex.
+   * @fileoverview Templates in namespace vHchB.
    * @public
    */
 
-  goog.module('pageIndex.incrementaldom');
+  goog.module('vHchB.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -12020,7 +12017,7 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias1 = _metalSoy2.default.getTemplate('main.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('conference.incrementaldom', 'render');
 
   /**
    * @param {Object<string, *>=} opt_data
@@ -12030,289 +12027,51 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var param76 = function param76() {
-      $header(opt_data, null, opt_ijData);
-      $footer(null, null, opt_ijData);
+    var param594 = function param594() {
+      ie_open('h6');
+      var dyn15 = opt_data.page.description;
+      if (typeof dyn15 == 'function') dyn15();else if (dyn15 != null) itext(dyn15);
+      ie_close('h6');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+      ie_close('input');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+      ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ content: param76 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param594 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'pageIndex.render';
+    $render.soyTemplateName = 'vHchB.render';
   }
 
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $header(opt_data, opt_ignored, opt_ijData) {
-    ie_open('header', null, null, 'class', 'header');
-    ie_open('div', null, null, 'class', 'container');
-    ie_open('h1', null, null, 'class', 'header-title');
-    var dyn8 = opt_data.site.title;
-    if (typeof dyn8 == 'function') dyn8();else if (dyn8 != null) itext(dyn8);
-    ie_close('h1');
-    ie_open('h2', null, null, 'class', 'header-subtitle');
-    var dyn9 = opt_data.site.index.description;
-    if (typeof dyn9 == 'function') dyn9();else if (dyn9 != null) itext(dyn9);
-    ie_close('h2');
-    ie_open('div', null, null, 'class', 'header-cta');
-    ie_open('a', null, null, 'href', '#', 'class', 'btn btn-accent');
-    itext('Go to Conferences Now');
-    ie_close('a');
-    ie_open('a', null, null, 'href', '#', 'class', 'btn btn-default');
-    itext('---');
-    ie_close('a');
-    ie_close('div');
-    ie_close('div');
-    ie_close('header');
-  }
-  exports.header = $header;
-  if (goog.DEBUG) {
-    $header.soyTemplateName = 'pageIndex.header';
-  }
-
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $why(opt_data, opt_ignored, opt_ijData) {
-    ie_open('article', null, null, 'class', 'about');
-    ie_open('div', null, null, 'class', 'container');
-    ie_open('div', null, null, 'class', 'row');
-    ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
-    ie_open('h3', null, null, 'class', 'about-title');
-    itext('Start with why');
-    ie_close('h3');
-    ie_open('p', null, null, 'class', 'about-description');
-    itext('Through the WHY, a story will arise, which will create trust and make an idea, a service, or a project unique. As Simon Sinek has said, having loyal users is all about attracting the people who share your fundamental beliefs. Remember: People don\'t buy what you do. They buy why you do it. I\'ll say it again: People don\'t buy what you do. They buy why you do it.');
-    ie_close('p');
-    ie_close('div');
-    ie_close('div');
-    ie_close('div');
-    ie_close('article');
-  }
-  exports.why = $why;
-  if (goog.DEBUG) {
-    $why.soyTemplateName = 'pageIndex.why';
-  }
-
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $features(opt_data, opt_ignored, opt_ijData) {
-    ie_open('div', null, null, 'class', 'features');
-    ie_open('div', null, null, 'class', 'container');
-    ie_open('div', null, null, 'class', 'row');
-    ie_open('section', null, null, 'class', 'feature col-md-4 col-md-offset-2');
-    ie_open('div', null, null, 'class', 'feature-graphic');
-    ie_void('span', null, null, 'class', 'icon-16-bullhorn');
-    ie_close('div');
-    ie_open('h3', null, null, 'class', 'feature-title');
-    itext('Heading');
-    ie_close('h3');
-    ie_open('p', null, null, 'class', 'feature-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo.');
-    ie_close('p');
-    ie_close('section');
-    ie_open('section', null, null, 'class', 'feature col-md-4');
-    ie_open('div', null, null, 'class', 'feature-graphic');
-    ie_void('span', null, null, 'class', 'icon-16-lock');
-    ie_close('div');
-    ie_open('h3', null, null, 'class', 'feature-title');
-    itext('Heading');
-    ie_close('h3');
-    ie_open('p', null, null, 'class', 'feature-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo.');
-    ie_close('p');
-    ie_close('section');
-    ie_open('section', null, null, 'class', 'feature col-md-4');
-    ie_open('div', null, null, 'class', 'feature-graphic');
-    ie_void('span', null, null, 'class', 'icon-16-calendar');
-    ie_close('div');
-    ie_open('h3', null, null, 'class', 'feature-title');
-    itext('Heading');
-    ie_close('h3');
-    ie_open('p', null, null, 'class', 'feature-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo.');
-    ie_close('p');
-    ie_close('section');
-    ie_close('div');
-    ie_close('div');
-    ie_close('div');
-  }
-  exports.features = $features;
-  if (goog.DEBUG) {
-    $features.soyTemplateName = 'pageIndex.features';
-  }
-
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $how(opt_data, opt_ignored, opt_ijData) {
-    ie_open('article', null, null, 'class', 'about');
-    ie_open('div', null, null, 'class', 'container');
-    ie_open('div', null, null, 'class', 'row');
-    ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
-    ie_open('h3', null, null, 'class', 'about-title');
-    itext('It\'s easier than you think');
-    ie_close('h3');
-    ie_open('p', null, null, 'class', 'about-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.');
-    ie_close('p');
-    ie_close('div');
-    ie_close('div');
-    ie_close('div');
-    ie_close('article');
-  }
-  exports.how = $how;
-  if (goog.DEBUG) {
-    $how.soyTemplateName = 'pageIndex.how';
-  }
-
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $highlights(opt_data, opt_ignored, opt_ijData) {
-    ie_open('div', null, null, 'class', 'highlights');
-    ie_open('div', null, null, 'class', 'container');
-    ie_open('section', null, null, 'class', 'highlight row');
-    ie_open('div', null, null, 'class', 'col-md-6 col-md-offset-2');
-    ie_open('h4', null, null, 'class', 'highlight-title');
-    itext('First highlight. It\'ll blow your mind.');
-    ie_close('h4');
-    ie_open('p', null, null, 'class', 'highlight-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.');
-    ie_close('p');
-    ie_close('div');
-    ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-1');
-    ie_open('img', null, null, 'class', 'highlight-image', 'src', 'http://placehold.it/500x400/e7e8e8/64696d', 'alt', 'Placeholder');
-    ie_close('img');
-    ie_close('div');
-    ie_close('section');
-    ie_open('section', null, null, 'class', 'highlight row');
-    ie_open('div', null, null, 'class', 'col-md-6 col-md-push-9');
-    ie_open('h4', null, null, 'class', 'highlight-title');
-    itext('It\'s that good. See for yourself.');
-    ie_close('h4');
-    ie_open('p', null, null, 'class', 'highlight-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.');
-    ie_close('p');
-    ie_close('div');
-    ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-2 col-md-pull-6');
-    ie_open('img', null, null, 'class', 'highlight-image', 'src', 'http://placehold.it/500x400/e7e8e8/64696d', 'alt', 'Placeholder');
-    ie_close('img');
-    ie_close('div');
-    ie_close('section');
-    ie_open('section', null, null, 'class', 'highlight row');
-    ie_open('div', null, null, 'class', 'col-md-6 col-md-offset-2');
-    ie_open('h4', null, null, 'class', 'highlight-title');
-    itext('And lastly, this one. Checkmate.');
-    ie_close('h4');
-    ie_open('p', null, null, 'class', 'highlight-description');
-    itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.');
-    ie_close('p');
-    ie_close('div');
-    ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-1');
-    ie_open('img', null, null, 'class', 'highlight-image', 'src', 'http://placehold.it/500x400/e7e8e8/64696d', 'alt', 'Placeholder');
-    ie_close('img');
-    ie_close('div');
-    ie_close('section');
-    ie_close('div');
-    ie_close('div');
-  }
-  exports.highlights = $highlights;
-  if (goog.DEBUG) {
-    $highlights.soyTemplateName = 'pageIndex.highlights';
-  }
-
-  /**
-   * @param {Object<string, *>=} opt_data
-   * @param {(null|undefined)=} opt_ignored
-   * @param {Object<string, *>=} opt_ijData
-   * @return {void}
-   * @suppress {checkTypes}
-   */
-  function $footer(opt_data, opt_ignored, opt_ijData) {
-    ie_open('footer', null, null, 'class', 'footer');
-    ie_open('div', null, null, 'class', 'container');
-    ie_open('div', null, null, 'class', 'row');
-    ie_open('p', null, null, 'class', 'footer-description col-md-6 col-md-offset-2');
-    itext('Copyright \xA9 2017 ');
-    ie_open('a', null, null, 'href', 'https://liferay.com');
-    itext('Liferay, Inc');
-    ie_close('a');
-    ie_close('p');
-    ie_open('p', null, null, 'class', 'footer-description col-md-6');
-    itext('Powered by ');
-    ie_open('a', null, null, 'href', 'http://wedeploy.com');
-    itext('WeDeploy\u2122');
-    ie_close('a');
-    ie_close('p');
-    ie_close('div');
-    ie_close('div');
-    ie_close('footer');
-  }
-  exports.footer = $footer;
-  if (goog.DEBUG) {
-    $footer.soyTemplateName = 'pageIndex.footer';
-  }
-
-  exports.render.params = ["site"];
-  exports.render.types = { "site": "any" };
-  exports.header.params = ["site"];
-  exports.header.types = { "site": "any" };
-  exports.why.params = [];
-  exports.why.types = {};
-  exports.features.params = [];
-  exports.features.types = {};
-  exports.how.params = [];
-  exports.how.types = {};
-  exports.highlights.params = [];
-  exports.highlights.types = {};
-  exports.footer.params = [];
-  exports.footer.types = {};
+  exports.render.params = ["page", "site"];
+  exports.render.types = { "page": "any", "site": "any" };
   exports.templates = templates = exports;
   return exports;
 });
 
-var pageIndex = function (_Component) {
-  _inherits(pageIndex, _Component);
+var vHchB = function (_Component) {
+  _inherits(vHchB, _Component);
 
-  function pageIndex() {
-    _classCallCheck(this, pageIndex);
+  function vHchB() {
+    _classCallCheck(this, vHchB);
 
-    return _possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (vHchB.__proto__ || Object.getPrototypeOf(vHchB)).apply(this, arguments));
   }
 
-  return pageIndex;
+  return vHchB;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(pageIndex, templates);
-exports.pageIndex = pageIndex;
+_metalSoy2.default.register(vHchB, templates);
+exports.vHchB = vHchB;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ }),
+/* 142 */,
+/* 143 */,
+/* 144 */,
 /* 145 */,
 /* 146 */,
 /* 147 */,
@@ -12357,10 +12116,7 @@ exports.default = templates;
 /* 186 */,
 /* 187 */,
 /* 188 */,
-/* 189 */,
-/* 190 */,
-/* 191 */,
-/* 192 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12392,7 +12148,7 @@ __webpack_require__(18);
 
 __webpack_require__(19);
 
-var _indexSoy = __webpack_require__(144);
+var _indexSoy = __webpack_require__(141);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -12404,23 +12160,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageIndex = function (_Component) {
-  _inherits(pageIndex, _Component);
+var vHchB = function (_Component) {
+  _inherits(vHchB, _Component);
 
-  function pageIndex() {
-    _classCallCheck(this, pageIndex);
+  function vHchB() {
+    _classCallCheck(this, vHchB);
 
-    return _possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (vHchB.__proto__ || Object.getPrototypeOf(vHchB)).apply(this, arguments));
   }
 
-  return pageIndex;
+  return vHchB;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pageIndex, _indexSoy2.default);
+_metalSoy2.default.register(vHchB, _indexSoy2.default);
 
-exports.default = pageIndex;
+exports.default = vHchB;
 
 /***/ })
-],[192]);
+],[189]);
